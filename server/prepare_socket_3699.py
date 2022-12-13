@@ -54,7 +54,6 @@ def prepare_socket_3699():
 
 
 def nosql_db_request(q):
-    # Receive the data in small chunks and retransmit it
     while True:
         connection = q.get()
         print ('---->', threading.currentThread().getName(), 'Started <----')
