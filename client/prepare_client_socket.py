@@ -5,7 +5,8 @@ import time
 def prepare_socket(port, request_data):
     request_data_json = json.dumps(request_data)
     request_data_in_bytes = bytes(request_data_json, encoding="utf-8")
-    # Create a TCP/IP socket
+    
+    # Create a TCP/IPv4 socket
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Connect the socket to the port where the server is listening
